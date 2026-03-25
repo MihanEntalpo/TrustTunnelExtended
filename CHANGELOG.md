@@ -5,6 +5,10 @@
     - Added `[outbound]` section for destination filtering
     - Rules in legacy configs are treated as `[inbound]`
 
+- [Feature] SIGHUP credential reload support
+    - Credentials can now be reloaded without restarting the endpoint via `systemctl reload` or SIGHUP
+    - Added `ExecReload` directive to systemd service template
+
 ## 1.0.17
 
 - [Fix]     Reverse proxy routing for H2/H3.
